@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azulejo Azul</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="sidebar.js"></script>
+  </head>
+  <body>
+    <header class="grid">
+      <a href="index.html"><img src="img/logo.png" alt=""/></a>
+      <nav class="sidebar">
+        <a href="#" onclick="hideSidebar()"
+          ><svg
+          height="24px"
+          id="Layer_1"
+          style="enable-background: new 0 0 512 512"
+          version="1.1"
+          viewBox="0 0 512 512"
+          width="24px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            d="M189.3,128.4L89,233.4c-6,5.8-9,13.7-9,22.4c0,8.7,3,16.5,9,22.4l100.3,105.4c11.9,12.5,31.3,12.5,43.2,0  c11.9-12.5,11.9-32.7,0-45.2L184.4,288h217c16.9,0,30.6-14.3,30.6-32c0-17.7-13.7-32-30.6-32h-217l48.2-50.4  c11.9-12.5,11.9-32.7,0-45.2C220.6,115.9,201.3,115.9,189.3,128.4z"
+          /></svg></a>
+        <a href="index.html">Home</a>
+        <a href="Branding.html">Branding</a>
+        <a href="#">Portfolio</a>
+        <a href="contactos.html">Contacto</a>
+      </nav>
+      <nav>
+        <a href="index.html" class="hideOnMobile">Home</a>
+        <a href="Branding.html" class="hideOnMobile">Branding</a>
+        <a href="#" class="hideOnMobile">Portfolio</a>
+        <a href="contactos.html" id="contacto">Contacto</a>
+        <a href="#" onclick="showSidebar()" class="menuButton"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="30px"
+            fill="#000000"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            /></svg></a>
+      </nav>
+    </header>
+    <main class="grid">
+      <img src="img/1164-removebg-preview.png" alt="logo azulejo azul" id="perfil"/>
+      <div id="sobremim">
+        <p id="sitacao"><i>"O autodesenvolvimento é a chave para um futuro promissor."</i>        </p>
+          <p>Olá, o meu nome é João Ferreira e tudo o que estás a ver foi criado por mim, puro JavaScript, HTML e CSS.</p>
+          <p>
+          Resido atualmente em Pombal mas procuro trabalhar remotamente.
+          </p>
+          <p>Sou desenvolvedor web e analista de cibersegurança certificado por
+          empresas de renome como: Google, NAU, Universidade de Cambridge e
+          Cisco.</p>
+        <a href="contactos.html" id="contacto-button">Contacto</a>
+      </div>
+      <h3 class="tgaleria">Certificação & competencias</h3>
+      <div class="cartao_s" id="expandableBox">
+        <img src="img/logo_cisco.jpg" alt="" width="100px" />
+        <h3>Junior Cybersecurity Analyst Career Path</h3>
+        <p>
+          O curso Junior Cybersecurity Analyst Career Path da Cisco prepara
+          iniciantes para a cibersegurança, cobrindo fundamentos como análise de
+          ameaças, monitoramento de redes e resposta a incidentes, oferecendo
+          uma base sólida para carreiras e certificações na área.
+        </p>
+        <p class="poppins-regular">Competências técnicas adquiridas:</p>
+
+        <ul>
+          <li>
+            Análise de Ameaças e Vulnerabilidades: Identificar e avaliar ameaças
+            e vulnerabilidades em sistemas e redes.
+          </li>
+          <li>
+            Monitoramento de Redes: Usar ferramentas para monitorar o tráfego de
+            rede e detectar atividades suspeitas.
+          </li>
+          <li>
+            Resposta a Incidentes: Implementar procedimentos para responder a
+            incidentes de segurança e mitigar seus impactos.
+          </li>
+          <li>
+            Segurança de Sistemas e Dados: Aplicar práticas para proteger
+            sistemas e dados contra acessos não autorizados e ataques.
+          </li>
+          <li>
+            Uso de Ferramentas de Cibersegurança: Utilizar ferramentas comuns
+            para análise e proteção de redes e sistemas.
+          </li>
+          <li>
+            Gerenciamento de Riscos: Avaliar e gerenciar riscos de segurança
+            para proteger a integridade dos sistemas.
+          </li>
+          <li>
+            Princípios de Segurança de Rede: Compreender e aplicar princípios
+            básicos de segurança para redes.
+          </li>
+        </ul>
+        <button class="expand-btn" id="expandBtn" onclick="toggleExpand()">
+          Mostrar mais
+        </button>
+      </div>
+      <div class="cartao_s" id="expandableBox">
+        <img src="img/i606944.webp" alt="" width="100px" />
+        <h3>Foundations of Cybersecurity</h3>
+        <p>
+          O curso Foundations of Cybersecurity da Google oferece uma introdução
+          aos princípios de cibersegurança, cobrindo o impacto dos ataques,
+          responsabilidades de um analista, domínios de segurança, frameworks,
+          ética, e as principais ferramentas usadas na proteção e resposta a
+          ameaças.
+        </p>
+
+        <p class="poppins-regular">Competências técnicas adquiridas:</p>
+
+        <ul>
+          <li>
+            Identificação de Impactos de Ataques de Segurança: Entendimento de
+            como ataques cibernéticos afetam os negócios.
+          </li>
+          <li>
+            Responsabilidades de um Analista de Cibersegurança: Conhecimento das
+            funções e habilidades de um analista de cibersegurança de nível
+            inicial.
+          </li>
+          <li>
+            Evolução da Cibersegurança: Reconhecimento do impacto de ataques
+            históricos no desenvolvimento da cibersegurança.
+          </li>
+          <li>
+            Domínios de Segurança do CISSP: Conhecimento dos oito principais
+            domínios de segurança.
+          </li>
+          <li>
+            Identificação de Domínios, Frameworks e Controles de Segurança:
+            Capacidade de identificar e aplicar frameworks e controles de
+            segurança.
+          </li>
+          <li>
+            Ética em Segurança Cibernética: Compreensão dos princípios éticos na
+            cibersegurança.
+          </li>
+          <li>
+            Ferramentas de Cibersegurança: Familiaridade com ferramentas comuns
+            usadas por analistas para proteção e resposta a ameaças.
+          </li>
+        </ul>
+        <button class="expand-btn">Mostrar mais</button>
+      </div>
+      <div class="cartao_s" id="expandableBox">
+        <img src="img/nau-sempre-a-aprender.png" alt="" />
+        <h3>
+          Cidadão Cibersocial | Gestão dos Riscos de Cibersegurança nas
+          Organizações | Introdução à Segurança da Informação Classificada |
+          RGPD para Cidadãos Atentos | Cidadão Ciberinformado | Cidadão
+          Ciberseguro
+        </h3>
+          Cidadão Cibersocial: Foca nas interações seguras e éticas no meio
+          digital, promovendo a cidadania responsável online. </p>
+          <p>Gestão dos Riscos de Cibersegurança nas Organizações: Explora
+          estratégias para identificar e mitigar riscos de segurança cibernética
+          em ambientes organizacionais.</p>
+          <p>Introdução à Segurança da Informação Classificada: Trata das melhores
+          práticas na proteção de informações sensíveis e classificadas em
+          ambientes corporativos e governamentais.</p>
+          <p>RGPD para Cidadãos Atentos: Apresenta os princípios fundamentais do
+          Regulamento Geral de Proteção de Dados (RGPD), promovendo a
+          conscientização sobre a proteção de dados pessoais.</p>
+          <p>Cidadão Ciberinformado: Ensina a identificar e combater a
+          desinformação online, capacitando os participantes a serem
+          consumidores críticos de informações.</p>
+          <p>Cidadão Ciberseguro: Foca nas práticas de segurança cibernética para
+          proteger informações pessoais e evitar ameaças digitais.</p>
+          <p class="poppins-regular">Competências técnicas adquiridas:</p>
+          <ul>
+            <li>
+              Identificação e mitigação de riscos cibernéticos
+            </li>
+            <li>
+              Proteção de informações classificadas
+            </li>
+            <li>
+              Conformidade com o RGPD e boas práticas de proteção de dados
+            </li>
+            <li>
+              Navegação segura e combate à desinformação
+            </li>
+            <li>
+              Adoção de práticas seguras no ambiente digital
+            </li>
+            <li>
+              Gestão de cibersegurança em organizações
+            </li>
+          </ul>
+        <button class="expand-btn">Mostrar mais</button>
+      </div>
+      <div class="cartao_s" id="expandableBox">
+        <img src="img/simplilearn.jpg" alt="" width="100px" />
+        <h3>Introduction to Figma course | Basic Introduction to Linux Course </h3>
+        <p>
+          Introduction to Figma: Ensina as funcionalidades básicas da ferramenta de design Figma, utilizada para criar interfaces de usuário colaborativas e protótipos, com foco em UX/UI design.
+        </p>
+        <p>
+          Basic Introduction to Linux: Apresenta os fundamentos do sistema operacional Linux, incluindo a navegação pela linha de comando, gerenciamento de arquivos e permissões, e conceitos básicos de administração de sistemas.
+        </p>
+        <p class="poppins-regular">Competências técnicas adquiridas:</p>
+        <ul>
+          <li>
+            Uso básico e intermediário do Figma para design de interfaces e prototipagem colaborativa
+          </li>
+          <li>
+            Conhecimento de ferramentas e fluxos de trabalho em UX/UI
+          </li>
+          <li>
+            Navegação pela linha de comando do Linux
+          </li>
+          <li>
+            Gerenciamento de arquivos e permissões no Linux
+          </li>
+          <li>
+            Conceitos fundamentais de administração de sistemas Linux
+          </li>
+        </ul>
+        <button class="expand-btn">Mostrar mais</button>
+      </div>
+      <div class="cartao_s" id="expandableBox">
+        <img
+          src="img/GL logo with transparent background.png"
+          alt=""
+          width="100px"
+        />
+        <h3>React JS</h3>
+        <p>
+          O curso React JS oferece uma introdução detalhada à biblioteca JavaScript React, amplamente utilizada para construir interfaces de usuário dinâmicas e interativas. Os participantes aprendem a criar componentes reutilizáveis, gerenciar o estado de aplicativos, lidar com eventos e interagir com APIs, além de explorar o uso do JSX para combinar HTML com JavaScript de maneira eficiente.
+        </p>
+        <p class="poppins-regular">Competências técnicas adquiridas:</p>
+        <ul>
+          <li>
+            Criação de componentes reutilizáveis com React
+          </li>
+          <li>
+            Gerenciamento de estado e props em aplicativos React
+          </li>
+          <li>
+            Manipulação de eventos e interações com a interface do usuário
+          </li>
+          <li>
+            Uso de JSX para combinar JavaScript e HTML
+          </li>
+          <li>
+            Integração com APIs externas via fetch/ajax
+          </li>
+          <li>
+            Conhecimento básico de hooks e ciclo de vida dos componentes
+          </li>
+        </ul>
+        <button class="expand-btn">Mostrar mais</button>
+      </div>
+      <div class="cartao_s" id="expandableBox">
+        <img src="img/Cambridge.png" alt="" />
+        <h3>C1 - Certificate in Advanced English</h3>
+        <p>
+          O C1 Advanced é um exame de proficiência em inglês de nível avançado,
+          reconhecido internacionalmente. Avalia habilidades de leitura,
+          escrita, audição e fala, demonstrando prontidão para comunicar em
+          inglês em um ambiente acadêmico ou profissional.
+        </p>
+        <p class="poppins-regular">Competências técnicas adquiridas:</p>
+        <ul>
+          <li>
+            Fluência em inglês: Comunicação natural e espontânea em diversas
+            situações.
+          </li>
+          <li>
+            Vocabulário amplo: Conhecimento de um vocabulário rico e variado.
+          </li>
+          <li>
+            Gramática precisa: Domínio das estruturas gramaticais do inglês.
+          </li>
+          <li>
+            Compreensão de textos complexos: Entendimento de artigos, relatórios
+            e outros materiais avançados.
+          </li>
+          <li>
+            Produção de textos diversos: Escrita de ensaios, relatórios,
+            e-mails, etc.
+          </li>
+          <li>
+            Compreensão auditiva: Entendimento de palestras, discussões e outros
+            materiais audiovisuais.
+          </li>
+          <li>
+            Interação oral: Participação ativa em conversas, debates e
+            apresentações.
+          </li>
+          <li>
+            Pensamento crítico: Análise de informações e formação de opiniões.
+          </li>
+          <li>
+            Confiança: Autoconfiança para se comunicar em inglês em qualquer
+            situação.
+          </li>
+        </ul>
+        <button class="expand-btn">Mostrar mais</button>
+      </div>
+    </main>
+  </body>
+</html>

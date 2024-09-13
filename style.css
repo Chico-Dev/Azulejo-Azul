@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FAMILIA POPPIN\  */
+
+p,
+li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#logo {
+  width: 100%;
+  text-align: center;
+  grid-column: 4 / span 3;
+  border-radius: 6px;
+}
+
+#perfil {
+  grid-column: span 6;
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+#contacto-button {
+  background-color: #0d3d6e; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 6px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block element */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 2px; /* Rounded corners */
+  /* position: absolute;
+            bottom: 0; */
+}
+
+#contacto-button:hover {
+  background-color: black;
+}
+
+#sobremim {
+  grid-column: span 5;
+  position: relative;
+  justify-content: center;
+}
+
+main .welcome {
+  grid-column: 7 / span 4;
+}
+
+.poppins-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3,
+header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tgaleria {
+  grid-column: 4 / span 6;
+  text-align: center;
+}
+
+#contacto {
+  background-color: #0d3d6e;
+  color: white;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*  */
+
+.produtos {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background: #f5f5f5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+header {
+  padding: 0px 40px;
+  background: #fff;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+header img {
+  width: 80px;
+}
+
+header h1 {
+  grid-column: span 6;
+}
+
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: end;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.05);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav a {
+  color: black;
+  margin-left: 10px;
+  text-decoration: none;
+}
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  align-items: center;
+}
+
+main > h2 {
+  grid-column: span 12;
+  font-size: 1.5em;
+  text-align: center;
+  /* padding-top: 20px; */
+}
+
+main .cartao {
+  grid-column: span 4;
+  background: white;
+  padding: 0px 20px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+main .cartao_contacto {
+  grid-column: span 12;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[value='Enviar'] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 19px;
+  width: 36px;
+}
+
+input[value='Enviar']:hover {
+  background-color: gray;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+main .cartao img {
+  width: 300px;
+}
+
+footer {
+  padding: 0px 40px 20px 40px;
+  background: #f5f5f5;
+  align-items: center;
+}
+
+footer .cartao {
+  grid-column: span 4;
+  background: white;
+  padding: 0px 20px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 100%;
+}
+
+.cartao_s {
+  grid-column: span 6;
+  background: white;
+  padding: 0px 20px 20px 20px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /*  */
+  max-height: 200px; /* Altura inicial limitada */
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  position: relative;
+  /* Para posicionar o botão dentro da caixa */
+}
+
+.cartao_s.expanded {
+  max-height: 100%;
+  height: 100%; /* Altura ao expandir */
+  justify-content: center;
+}
+
+.expand-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  /* Posiciona o botão dentro da caixa */
+  bottom: 0; /* Alinha o botão na parte inferior */
+  left: 0;
+  margin-top: 60px;
+}
+
+.expand-btn:hover {
+  background-color: grey;
+}
+
+.cartao_s p,
+ul {
+  text-align: start;
+}
+
+.cartao_s p {
+  text-indent: 1em;
+}
+
+.cartao_s img {
+  width: 200px;
+}
+
+.cartao img {
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+
+/* EFEITO NAVBAR */
+nav a {
+  position: relative;
+}
+
+div.branding {
+  grid-column: 2 / span 10;
+  position: relative;
+  /* width: 50vw; */
+  /* height: 0; */
+  padding-top: 56.25%;
+  padding-bottom: 0;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  /* margin-top: 1.6em;
+  margin-bottom: 0.9em; */
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a#contacto::after {
+  content: none;
+}
+
+nav a#contacto:hover {
+  background-color: black;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+/* FIM EFEITO */
+.menuButton {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  html {
+    width: 100vw;
+  }
+
+  /* header nav a {
+    color: #023265;
+  } */
+
+  .menuButton {
+    display: block;
+  }
+  main img {
+    grid-column: 2 / span 10;
+  }
+  main .welcome {
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+
+  main .cartao {
+    grid-column: 2 / span 10;
+  }
+  main .cartao_s {
+    grid-column: span 10;
+  }
+
+  div.welcome {
+    grid-column: 2 / span 10;
+  }
+
+  header nav {
+    grid-column: 12;
+  }
+  header.grid {padding:0px;width: 100%;}
+
+  header a {grid-column: span 3;}
+
+  #sobremim {
+    grid-column: span 12;
+  }
+
+  #expandableBox {
+    grid-column: span 12;
+  }
+
+  div#sobremim a{
+    margin-left: 35%;
+    width: 30%;
+  }
+
+  #perfil {
+    grid-column: 1 / span 10;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+ a#contacto{display: none;}
+
+  main .cartao img {
+    width: 100%;
+  }
+  footer .cartao {
+    grid-column: 2 / span 10;
+    height: 100%;
+  }
+  footer {
+    padding: 0px 10px 20px;
+    margin-bottom: 10px;
+  }
+  main.grid {
+    margin: 20 0px;
+    padding-top: 0;
+  }
+  #logo {
+    width: 50%;
+    grid-column: 5 / span 8;
+  }
+  header img {
+    grid-column: span 2;
+  }
+
+  div.branding {
+    grid-column: span 12;
+  }
+}
+
+div.cartao_contacto{
+  padding: 2%;
+}
+
+#sitacao{margin-top: 0px;}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
